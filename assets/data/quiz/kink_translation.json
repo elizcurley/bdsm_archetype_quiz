@@ -1,0 +1,120 @@
+[
+  {
+    "key": "protocol_service",
+    "maps_from_flags": [
+      "protocol_service"
+    ],
+    "suggests": {
+      "practices": [
+        "daily protocol",
+        "inspection/etiquette scenes",
+        "service tasks with ritual"
+      ],
+      "roles": [
+        "Butler/Valet",
+        "Head of Household",
+        "Governess",
+        "Majordomo"
+      ],
+      "communities": [
+        "High-Protocol D/s",
+        "Service-Oriented D/s"
+      ],
+      "safety_notes": [
+        "establish \u2018off-switch\u2019 signal",
+        "tiered consent for corrections"
+      ],
+      "starter_scenes": [
+        "morning inspection",
+        "counted service task list"
+      ]
+    }
+  },
+  {
+    "key": "containment_themes",
+    "maps_from_flags": [
+      "containment_themes"
+    ],
+    "suggests": {
+      "practices": [
+        "bondage-as-holding",
+        "weighted blankets",
+        "ground-and-wrap scenes"
+      ],
+      "roles": [
+        "Rigger/Top (containment focus)",
+        "Holder"
+      ],
+      "communities": [
+        "Rope (low-intensity tracks)",
+        "Somatic/Bondage for Nervous System"
+      ],
+      "safety_notes": [
+        "watch breath/nerve cues",
+        "consent to immobility windows"
+      ],
+      "starter_scenes": [
+        "chair tie + guided breath",
+        "silk wrap immobilization"
+      ]
+    }
+  },
+  {
+    "key": "edge_curious",
+    "maps_from_flags": [
+      "edge_curious"
+    ],
+    "suggests": {
+      "practices": [
+        "sensation ladders",
+        "impact ladders",
+        "fear-play lite with exits"
+      ],
+      "roles": [
+        "Risk Designer",
+        "Curiosity Guide"
+      ],
+      "communities": [
+        "Edge-play education tracks",
+        "Primal & Impact labs"
+      ],
+      "safety_notes": [
+        "pre-plan exit ramps",
+        "color-scale check-ins",
+        "slow escalation"
+      ],
+      "starter_scenes": [
+        "blindfold + object reveal (opt-outs)",
+        "measured impact ramp"
+      ]
+    }
+  },
+  {
+    "key": "co_design",
+    "maps_from_flags": [
+      "co_design"
+    ],
+    "suggests": {
+      "practices": [
+        "collaborative scene scripts",
+        "aftercare co-planning",
+        "feedback rituals"
+      ],
+      "roles": [
+        "Co-Architects"
+      ],
+      "communities": [
+        "Consent-forward workshops",
+        "Design-oriented kink spaces"
+      ],
+      "safety_notes": [
+        "mid-scene renegotiation protocol",
+        "notes-to-self after"
+      ],
+      "starter_scenes": [
+        "script a 20-min scene with 2 check-ins",
+        "aftercare menu exchange"
+      ]
+    }
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "id": "att_01",
+    "type": "scale",
+    "prompt": "When tension rises in an important relationship, what feels most natural in the first hour?",
+    "scale": {
+      "min": 1,
+      "max": 7,
+      "left": "take space to settle",
+      "right": "move closer to repair"
+    },
+    "weights": {
+      "attachment_orientation": "scale(-0.6,+0.6)"
+    }
+  },
+  {
+    "id": "affect_02",
+    "type": "scale",
+    "prompt": "How easily can you ride a strong emotional wave and still make grounded choices?",
+    "scale": {
+      "min": 1,
+      "max": 7,
+      "left": "I get flooded/shut down",
+      "right": "I can stay present and steer"
+    },
+    "weights": {
+      "affect_regulation": "scale(-0.7,+0.7)"
+    }
+  },
+  {
+    "id": "bound_03",
+    "type": "single",
+    "prompt": "Which description sounds most like you when sharing limits?",
+    "options": [
+      {
+        "label": "I know them after the fact; it\u2019s hard in the moment.",
+        "boosts": {
+          "boundary_consent": -0.6,
+          "interpersonal_attunement": -0.2
+        }
+      },
+      {
+        "label": "I can state basics, but nuance is tough under pressure.",
+        "boosts": {
+          "boundary_consent": 0.1
+        }
+      },
+      {
+        "label": "I name them clearly and update as things shift.",
+        "boosts": {
+          "boundary_consent": 0.6,
+          "interpersonal_attunement": 0.2
+        }
+      }
+    ]
+  },
+  {
+    "id": "auth_04",
+    "type": "multi",
+    "prompt": "In group projects or shared tasks, which roles feel energizing (pick up to 2)?",
+    "max_select": 2,
+    "options": [
+      {
+        "label": "Setting direction and keeping the cadence",
+        "boosts": {
+          "authority_agency": 0.6
+        }
+      },
+      {
+        "label": "Executing within a clear structure",
+        "boosts": {
+          "authority_agency": 0.4,
+          "ritual_meaning": 0.2
+        }
+      },
+      {
+        "label": "Rotating roles based on context",
+        "boosts": {
+          "authority_agency": 0.2,
+          "interpersonal_attunement": 0.3
+        }
+      },
+      {
+        "label": "Working alongside as equals, lightly facilitated",
+        "boosts": {
+          "authority_agency": -0.2
+        }
+      }
+    ]
+  },
+  {
+    "id": "arousal_05",
+    "type": "scale",
+    "prompt": "How do you relate to intensity and novelty in experiences you care about?",
+    "scale": {
+      "min": 1,
+      "max": 7,
+      "left": "prefer steadiness/known paths",
+      "right": "seek intensity and new edges"
+    },
+    "weights": {
+      "arousal_modulation": "scale(-0.7,+0.7)"
+    }
+  },
+  {
+    "id": "shame_06",
+    "type": "scale",
+    "prompt": "When desire collides with an inner 'shouldn't', how moveable is that boundary?",
+    "scale": {
+      "min": 1,
+      "max": 7,
+      "left": "fixed; hard to reframe",
+      "right": "flexible; can become permission"
+    },
+    "weights": {
+      "shame_permission": "scale(-0.6,+0.6)"
+    }
+  },
+  {
+    "id": "ritual_07",
+    "type": "single",
+    "prompt": "Pick the planning style that best fits your favorite days.",
+    "options": [
+      {
+        "label": "Loose flow; decide in the moment",
+        "boosts": {
+          "ritual_meaning": -0.3
+        }
+      },
+      {
+        "label": "Some anchors with improvisation",
+        "boosts": {
+          "ritual_meaning": 0.2
+        }
+      },
+      {
+        "label": "Clear ritual/structure; I find depth in repetition",
+        "boosts": {
+          "ritual_meaning": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "id": "attune_08",
+    "type": "scale",
+    "prompt": "How well do you read subtle shifts (tone, breath, pace) in close others?",
+    "scale": {
+      "min": 1,
+      "max": 7,
+      "left": "I notice after it's obvious",
+      "right": "I track in real time"
+    },
+    "weights": {
+      "interpersonal_attunement": "scale(-0.6,+0.6)"
+    }
+  },
+  {
+    "id": "conflict_09",
+    "type": "multi",
+    "prompt": "Under stress, which strategies do you reach for (pick up to 2)?",
+    "max_select": 2,
+    "options": [
+      {
+        "label": "Name the elephant and propose a next step",
+        "boosts": {
+          "attachment_orientation": 0.3,
+          "boundary_consent": 0.3
+        }
+      },
+      {
+        "label": "Get quiet to think, then re-engage",
+        "boosts": {
+          "affect_regulation": 0.3,
+          "attachment_orientation": -0.2
+        }
+      },
+      {
+        "label": "Keep moving; action first",
+        "boosts": {
+          "arousal_modulation": 0.3
+        }
+      },
+      {
+        "label": "Seek structure: lists, roles, rules",
+        "boosts": {
+          "ritual_meaning": 0.3,
+          "authority_agency": 0.2
+        }
+      }
+    ]
+  },
+  {
+    "id": "texture_10",
+    "type": "single",
+    "prompt": "Which sensory description sounds most like 'home base' for your body?",
+    "options": [
+      {
+        "label": "Contained and held together",
+        "boosts": {
+          "arousal_modulation": -0.2,
+          "ritual_meaning": 0.3
+        }
+      },
+      {
+        "label": "Energetic with room to roam",
+        "boosts": {
+          "arousal_modulation": 0.3
+        }
+      },
+      {
+        "label": "Soft exchange and mutual pacing",
+        "boosts": {
+          "interpersonal_attunement": 0.3
+        }
+      }
+    ]
+  },
+  {
+    "id": "meaning_11",
+    "type": "open",
+    "prompt": "Describe a time something ordinary felt sacred or significant. What made it land?",
+    "nlp": {
+      "keysets": {
+        "ritual_terms": [
+          "routine",
+          "ritual",
+          "pattern",
+          "count",
+          "practice",
+          "altar",
+          "vow"
+        ],
+        "attune_terms": [
+          "noticed",
+          "breath",
+          "pace",
+          "eyes",
+          "tone",
+          "tracked",
+          "checked in"
+        ],
+        "intensity_terms": [
+          "rush",
+          "edge",
+          "electric",
+          "spike",
+          "nerve",
+          "adrenaline"
+        ]
+      },
+      "map": [
+        {
+          "if_any": "ritual_terms",
+          "boosts": {
+            "ritual_meaning": 0.4
+          }
+        },
+        {
+          "if_any": "attune_terms",
+          "boosts": {
+            "interpersonal_attunement": 0.4
+          }
+        },
+        {
+          "if_any": "intensity_terms",
+          "boosts": {
+            "arousal_modulation": 0.4
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "permission_12",
+    "type": "open",
+    "prompt": "Name a desire you allowed yourself after initially hesitating. What shifted?",
+    "nlp": {
+      "keysets": {
+        "reframe_terms": [
+          "reframe",
+          "permission",
+          "allowed",
+          "context",
+          "renegotiated",
+          "language"
+        ],
+        "boundary_terms": [
+          "limit",
+          "stop",
+          "renegotiate",
+          "signal",
+          "code"
+        ]
+      },
+      "map": [
+        {
+          "if_any": "reframe_terms",
+          "boosts": {
+            "shame_permission": 0.5
+          }
+        },
+        {
+          "if_any": "boundary_terms",
+          "boosts": {
+            "boundary_consent": 0.3
+          }
+        }
+      ]
+    }
+  }
+]
