@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Psyche → Kink | Questions Peek</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+<header><div class="container"><strong>Questions Peek</strong></div></header>
+<main class="container">
+  <div class="card">
+    <p>This lists the questions JSON as the browser sees it.</p>
+    <div id="list"></div>
+  </div>
+</main>
+<script src="assets/js/utils.js"></script>
+<script>
+(async function(){
+  try{
+    const qs = await fetchJSON('assets/data/quiz/questions.json');
+    const wrap = document.getElementById('list');
+    if(!Array.isArray(qs) || qs.length===0){
+      wrap.innerHTML = '<p style="color:crimson">Loaded but empty.</p>';
+      return;
+    }
+    const ol = document.createElement('ol');
+    qs.forEach(q=>{
+      const li=document.createElement('li');
+      li.textContent = `${q.id} — ${q.type} — ${q.prompt?.slice(0,80)||''}`;
+      ol.appendChild(li);
+    });
+    wrap.appendChild(ol);
+  }catch(e){
+    document.getElementById('list').innerHTML = '<p style="color:crimson">Failed: '+e.message+'</p>';
+  }
+})();
+</script>
+</body>
+</html>
