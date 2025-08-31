@@ -1,0 +1,39 @@
+# Authority → Protocol/Service pathways
+- when:
+    any_selected: [auth_04.option["Setting direction and keeping the cadence"]]
+  then:
+    weights: { authority_agency: +0.4 }
+    flags_add: [leadership_affinity]
+
+- when:
+    any_selected: [auth_04.option["Executing within a clear structure"]]
+  then:
+    weights: { ritual_meaning: +0.2, authority_agency: +0.2 }
+    flags_add: [structure_affinity]
+
+# High ritual + authority or high ritual + containment → protocol
+- when:
+    dimensions_high: { ritual_meaning: 70 }
+    flags_any: [leadership_affinity, structure_affinity]
+  then:
+    kink_flags_add: [protocol_service]
+
+# High arousal + high shame permission → edge-play curiosity (to be tempered by boundaries)
+- when:
+    dimensions_high_all: [arousal_modulation: 70, shame_permission: 70]
+  then:
+    kink_flags_add: [edge_curious]
+
+# High attunement + high boundaries → cooperative scene design
+- when:
+    dimensions_high_all: [interpersonal_attunement: 70, boundary_consent: 70]
+  then:
+    kink_flags_add: [co_design]
+
+# Containment preference → bondage/hold themes (psychological containment)
+- when:
+    any_selected: [texture_10.option["Contained and held together"]]
+  then:
+    kink_flags_add: [containment_themes]
+
+# Open-text echoes (meaning_11 / permission_12) already boost dimensions via NLP
