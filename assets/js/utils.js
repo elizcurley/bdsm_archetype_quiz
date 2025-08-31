@@ -2,9 +2,27 @@
 // Simple helpers
 const DATA_BASE = 'assets/data/quiz';
 
+
 async function fetchJSON(path){
-  const res = await fetch(path);
-  if(!res.ok) throw new Error(`Failed to load ${path}`);
+  try{
+    const res = await fetch(path, {cache:'no-store'});
+    if(!res.ok){
+      console.error('[fetchJSON] HTTP error', res.status, path);
+      throw new Error(`HTTP ${res.status} for ${path}`);
+    }
+    const ct = res.headers.get('content-type') || '';
+    if(!ct.includes('application/json')){
+      console.warn('[fetchJSON] non-JSON content-type', ct, 'for', path);
+    }
+    const data = await res.json();
+    console.log('[fetchJSON] loaded', path, Array.isArray(data)?`(len ${data.length})`:'', data && !Array.isArray(data) ? Object.keys(data) : '');
+    return data;
+  }catch(e){
+    console.error('[fetchJSON] failed', path, e);
+    throw e;
+  }
+}
+`);
   return res.json();
 }
 
