@@ -1,45 +1,57 @@
 [
-  {
-    "key": "alchemist",
-    "name": "The Alchemist",
-    "short": "Transforms charge into meaning; ritual-forward.",
-    "long": "You metabolize intensity into insight. Rhythm and symbolism help you weave experience into a coherent story that others can feel.",
-    "affirmations": [
-      "You transmute intensity into integration."
-    ],
-    "dimension_profile": {
-      "attachment_orientation": 60,
-      "affect_regulation": 70,
-      "boundary_consent": 70,
-      "authority_agency": 55,
-      "arousal_modulation": 55,
-      "shame_permission": 70,
-      "ritual_meaning": 90,
-      "interpersonal_attunement": 70
-    },
-    "reflection_questions": {
-      "general": [
-        "Where does repetition become sacred for you?"
-      ],
-      "sexual": [
-        "Which rituals help you land after a charged experience?"
-      ]
-    }
-  },
-  {
-    "key": "keystone",
-    "name": "The Keystone",
-    "short": "Stable, attuned, and boundary-clear; others steady around you.",
-    "long": "You anchor rooms. Your steadiness and clarity create safety where depth work becomes possible.",
-    "affirmations": [
-      "Your steadiness is a gift that lets others unfold."
-    ],
-    "dimension_profile": {
-      "attachment_orientation": 65,
-      "affect_regulation": 80,
-      "boundary_consent": 85,
-      "authority_agency": 50,
-      "arousal_modulation": 35,
-      "shame_permission": 55,
-      "ritual_meaning": 65,
-    ]
+{
+"key": "alchemist",
+"name": "The Alchemist",
+"short": "Transforms charge into meaning; ritual-forward.",
+"long": "You metabolize intensity into insight. Rhythm and symbolism help you weave experience into a coherent story that others can feel.",
+"affirmations": ["You transmute intensity into integration."],
+"dimension_profile": {
+"attachment_orientation": 60,
+"affect_regulation": 70,
+"boundary_consent": 70,
+"authority_agency": 55,
+"arousal_modulation": 55,
+"shame_permission": 70,
+"ritual_meaning": 90,
+"interpersonal_attunement": 70
+},
+"reflection_questions": {
+"general": ["Where does repetition become sacred for you?"],
+"sexual": ["Which rituals help you land after a charged experience?"]
+}
+},
+{
+"key": "keystone",
+"name": "The Keystone",
+"short": "Stable, attuned, and boundary-clear; others steady around you.",
+"long": "You anchor rooms. Your steadiness and clarity create safety where depth work becomes possible.",
+"affirmations": ["Your steadiness is a gift that lets others unfold."],
+"dimension_profile": {
+"attachment_orientation": 65,
+"affect_regulation": 80,
+"boundary_consent": 85,
+"authority_agency": 50,
+"arousal_modulation": 35,
+"shame_permission": 55,
+"ritual_meaning": 65,
+"interpersonal_attunement": 85
+},
+"reflection_questions": {
+"general": ["Where do you need holding, not just to hold others?"],
+"sexual": ["What does restorative aftercare look like for you?"]
+}
+},
+{
+"key": "vanguard",
+"name": "The Vanguard",
+"short": "Directive and edge-seeking with care.",
+"long": "You design paths into the unknown and bring others with you, pairing confidence with responsibility.",
+"affirmations": ["Leadership can be gentle and exacting at once."],
+"dimension_profile": {
+"attachment_orientation": 55,
+"affect_regulation": 75,
+"boundary_consent": 70,
+"authority_agency": 85,
+"arousal_modulation": 80,
+"shame_permission": 65,
+]

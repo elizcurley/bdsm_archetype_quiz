@@ -38,4 +38,10 @@ return dot / (Math.sqrt(na)*Math.sqrt(nb));
 }
 
 
+function saveState(key, obj){ localStorage.setItem(key, JSON.stringify(obj)); }
+function loadState(key, fallback=null){ try{ return JSON.parse(localStorage.getItem(key)) ?? fallback; }catch(e){ return fallback; } }
+function copyToClipboard(text){
+const ta = document.createElement('textarea');
+ta.value = text; document.body.appendChild(ta); ta.select();
+document.execCommand('copy'); document.body.removeChild(ta);
 }
