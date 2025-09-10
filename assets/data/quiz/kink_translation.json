@@ -21,7 +21,7 @@
         "Service-Oriented D/s"
       ],
       "safety_notes": [
-        "establish \u2018off-switch\u2019 signal",
+        "establish ‘off-switch’ signal",
         "tiered consent for corrections"
       ],
       "starter_scenes": [
@@ -91,30 +91,4 @@
   },
   {
     "key": "co_design",
-    "maps_from_flags": [
-      "co_design"
-    ],
-    "suggests": {
-      "practices": [
-        "collaborative scene scripts",
-        "aftercare co-planning",
-        "feedback rituals"
-      ],
-      "roles": [
-        "Co-Architects"
-      ],
-      "communities": [
-        "Consent-forward workshops",
-        "Design-oriented kink spaces"
-      ],
-      "safety_notes": [
-        "mid-scene renegotiation protocol",
-        "notes-to-self after"
-      ],
-      "starter_scenes": [
-        "script a 20-min scene with 2 check-ins",
-        "aftercare menu exchange"
-      ]
-    }
-  }
-]
+  ]
